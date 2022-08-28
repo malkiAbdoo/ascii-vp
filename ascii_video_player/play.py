@@ -5,7 +5,7 @@ from time import sleep
 from ascii_frames import image2ascii
 
 
-def play(path, size=None, replay=False, chars, speed=0.06):
+def play(path, size=None, replay=False, chars="", speed=0.06):
     if cv2.VideoCapture(path).read()[1] is None:
         return
 
