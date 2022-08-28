@@ -1,25 +1,7 @@
 import os
 import sys
-from time import sleep
 import cv2
-
-# informations
-help_ = '''
-NAME
-        vta - convert video to ASCII.
-
-SYNOPSIS
-        vta [FILE]
-
-DESCRIPTION
-        Convert and render file from MP4 format to ASCII.
-    
-OPTIONS
-        no options in this version..
-
-Project homepage on https://github.com/malkiAbdoo/vta
-Copyright 2022-2027
-'''
+from time import sleep
 
 
 def image2ascii(frame):
@@ -84,7 +66,6 @@ def play(path, speed=0.06):
 
 
 path = checkPath()
-if not path:
-    sys.exit()
+if not path: sys.exit()
 
 play(path)
