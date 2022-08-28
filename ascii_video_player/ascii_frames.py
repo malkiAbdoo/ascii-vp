@@ -2,16 +2,15 @@ import os
 import cv2
 
 
-def image2ascii(frame, size=None):
+def image2ascii(frame, size, chars):
     # convert to grayscale image
     frame = cv2.cvtColor(rescale_frame(frame, size), cv2.COLOR_BGR2GRAY)
 
-    chars = "  .',;:clodxkO0KXNM@"
-    chars.split()
-
     # replace each pixel with a character from array
+    chars.split()
     def mappingPixels(pxls):
-        return ''.join(list(map(lambda p: chars[p//16], pxls)))
+        lim = 255 // (len(chars) - 1)
+        return ''.join(list(map(lambda p: chars[p//lim], pxls)))
 
     ascii_img = list(map(lambda pxls: mappingPixels(pxls), frame))
     ascii_img = '\n'.join(ascii_img)
