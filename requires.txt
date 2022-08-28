@@ -1,0 +1,4 @@
+
+_ Python >= 3
+- OpenCV: opencv-python
+
