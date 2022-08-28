@@ -10,6 +10,8 @@ def main():
     PARSER.add_argument('path', help="the path of a video or a GIF.")
     PARSER.add_argument('-r', '--replay', help="Replay the video automatically when the video ends.", action="store_true")
     PARSER.add_argument('-s', '--size', help="Set a size to the video.", type=str)
+    PARSER.add_argument('-c', '--chars',  default=" .`:;icokOXN",type=str,
+            help='characters depending on the grayscale value from black to white (default: "%(default)s")')
     ARGS = PARSER.parse_args()
 
     # check if the file exists
@@ -17,7 +19,7 @@ def main():
         print(f"ERROR: '{path}' does not exist.")
         return
 
-    play(path=ARGS.path, size=ARGS.size, replay=ARGS.replay)
+    play(path=ARGS.path, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
 
 
 if __name__ == '__main__':
