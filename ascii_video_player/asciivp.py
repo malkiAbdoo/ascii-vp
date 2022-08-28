@@ -4,26 +4,21 @@ import argparse
 from play import play
 
 
-def checkPath():
-    # path of the video
-    args = len(sys.argv)
-    if args == 1 or (args > 1 and sys.argv[1] in ['--help', '-h']):
-        print(help_)
-        return
+def main():
+    # get the arguments
+    PARSER = argparse.ArgumentParser()
+    PARSER.add_argument('path', help="the path of a video or a GIF.")
+    PARSER.add_argument('-r', '--replay', help="Replay the video automatically when the video ends.", action="store_true")
+    PARSER.add_argument('-s', '--size', help="Set a size to the video.", type=str)
+    ARGS = PARSER.parse_args()
 
-    path = sys.argv[1]
-    # check if the video exists
-    if not os.path.exists(path):
+    # check if the file exists
+    if not os.path.exists(ARGS.path):
         print(f"ERROR: '{path}' does not exist.")
         return
-    if not path.endswith('.mp4') and not path.endswith('.gif'):
-        print(f"ERROR: can't read '{path}'.")
-        return
-    return path
+
+    play(path=ARGS.path, size=ARGS.size, replay=ARGS.replay)
 
 
-path = checkPath()
-if not path: sys.exit()
-
-play(path)
-
+if __name__ == '__main__':
+    main()
