@@ -22,7 +22,7 @@ setup(
     version="1.0.0",
     author="Malki Abderrahman",
     author_email="abdo.malkiep@gmail.com",
-    description="Play any video or GIF as ASCII characters in the terminal",
+    description="Convert any video or GIF to ASCII play it in the terminal",
     url="https://github.com/malkiAbdoo/ascii-vp",
 #    project_urls={
 #        'Source': 'https://github.com/joelibaceta/video-to-ascii',
