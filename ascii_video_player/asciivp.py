@@ -16,8 +16,8 @@ def checkPath():
     if not os.path.exists(path):
         print(f"ERROR: '{path}' does not exist.")
         return
-    if not path.endswith('.mp4') or not path.endswith('.gif'):
-        print(f"ERROR: can't read {path}.")
+    if not path.endswith('.mp4') and not path.endswith('.gif'):
+        print(f"ERROR: can't read '{path}'.")
         return
     return path
 

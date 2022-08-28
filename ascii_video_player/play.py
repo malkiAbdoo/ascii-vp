@@ -8,7 +8,6 @@ from ascii_frames import image2ascii
 def play(path, speed=0.06):
     os.system("clear")
     vidcap = cv2.VideoCapture(path)
-    cv2.waitKey(10)
 
     while True:
         success, frame = vidcap.read()
