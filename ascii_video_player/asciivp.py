@@ -25,6 +25,5 @@ def main():
     play(path=ARGS.path, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
 
 
-    url="",
 if __name__ == '__main__':
     main()
