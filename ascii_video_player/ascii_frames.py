@@ -1,4 +1,5 @@
 import os
+import sys
 import cv2
 
 
@@ -6,7 +7,7 @@ def image2ascii(frame, size, chars):
     # convert to grayscale image
     frame = cv2.cvtColor(rescale_frame(frame, size), cv2.COLOR_BGR2GRAY)
 
-    # replace each pixel with a character from array
+    # replace each pixel with a character from chars
     def mappingPixels(pxls):
         lim = 255 // (len(chars) - 1)
         return ''.join(list(map(lambda p: chars[p//lim], pxls)))
@@ -19,7 +20,10 @@ def image2ascii(frame, size, chars):
 
 def rescale_frame(frame, size):
     if size:
-        width, height = tuple(map(int, size.split('x')))
+        try: width, height = tuple(map(int, size.split('x')))
+        except ValueError: 
+            print("ERROR:invalid size: expected 'WIDTHxHEIGHT'.")
+            sys.exit()
     else:
         # get the terminal height
         lines, _ = os.get_terminal_size()
