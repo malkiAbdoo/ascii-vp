@@ -13,7 +13,7 @@ def main():
     PARSER.add_argument('file', help="the file path of a video or a GIF.")
     PARSER.add_argument('-r', '--replay', help="Replay the video automatically when the video ends.", action="store_true")
     PARSER.add_argument('-s', '--size', help="Set a size to the video.", type=str)
-    PARSER.add_argument('-c', '--chars',  default=" .`:;icokOXN",type=str,
+    PARSER.add_argument('-c', '--chars',  default=" .'~;icok0XN",type=str,
             help='characters depending on the grayscale value from black to white (default: "%(default)s")')
     ARGS = PARSER.parse_args()
 
