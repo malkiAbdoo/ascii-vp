@@ -1,5 +1,6 @@
 import pip
 from setuptools import setup
+from setuptools import find_packages
 from pip._internal import main
 
 
@@ -26,7 +27,8 @@ setup(
         'Source': 'https://github.com/malkiAbdoo/ascii-vp',
         'Tracker': 'https://github.com/joelibaceta/ascii-vp/issues'
     },
-    packages=['ascii_video_player'],
+    packages=find_packages(),
+    include_package_data=True,
     install_requires=['opencv-python', 'pafy', 'youtube-dl'],
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -37,8 +39,6 @@ setup(
     ],
     keywords="ascii, video, gif, linux, python, terminal",
     entry_points={
-        "console_scripts": [
-            'asciivp=ascii_video_palyer.asciivp:main'
-        ]
+        "console_scripts": ['asciivp=ascii_video_player.asciivp:main']
     }
 )
