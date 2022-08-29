@@ -29,7 +29,7 @@ setup(
 #        'Tracker': 'https://github.com/joelibaceta/video-to-ascii/issues'
 #    },
     packages=['ascii_video_player'],
-    install_requires=['opencv-python'],
+    install_requires=['opencv-python', 'pafy', 'youtube-dl'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.10",
