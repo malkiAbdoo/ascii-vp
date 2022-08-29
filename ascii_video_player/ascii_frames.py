@@ -22,7 +22,7 @@ def rescale_frame(frame, size):
     if size:
         try: width, height = tuple(map(int, size.split('x')))
         except ValueError: 
-            print("ERROR:invalid size: expected 'WIDTHxHEIGHT'.")
+            print("ERROR: invalid size: expected 'WIDTHxHEIGHT'.")
             sys.exit()
     else:
         # get the terminal height
