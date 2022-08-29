@@ -10,7 +10,7 @@ def main():
 
     # get the arguments
     PARSER = argparse.ArgumentParser(prog="asciivp", description=desc, epilog=eplg)
-    PARSER.add_argument('path', help="the path of a video or a GIF.")
+    PARSER.add_argument('file', help="the file path of a video or a GIF.")
     PARSER.add_argument('-r', '--replay', help="Replay the video automatically when the video ends.", action="store_true")
     PARSER.add_argument('-s', '--size', help="Set a size to the video.", type=str)
     PARSER.add_argument('-c', '--chars',  default=" .`:;icokOXN",type=str,
@@ -22,7 +22,7 @@ def main():
         print(f"ERROR: '{path}' does not exist.")
         return
 
-    play(path=ARGS.path, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
+    play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
 
 
 if __name__ == '__main__':
