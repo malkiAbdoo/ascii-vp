@@ -7,7 +7,6 @@ def image2ascii(frame, size, chars):
     frame = cv2.cvtColor(rescale_frame(frame, size), cv2.COLOR_BGR2GRAY)
 
     # replace each pixel with a character from array
-    chars.split()
     def mappingPixels(pxls):
         lim = 255 // (len(chars) - 1)
         return ''.join(list(map(lambda p: chars[p//lim], pxls)))
