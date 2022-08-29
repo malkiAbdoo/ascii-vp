@@ -1,4 +1,5 @@
 
 - Python >= 3
 - OpenCV: opencv-python
-
+- pafy
+- youtube-dl
