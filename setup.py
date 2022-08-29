@@ -1,9 +1,5 @@
-import sys
 import pip
 from setuptools import setup
-from setuptools.command.install import install
-from setuptools.command.develop import develop
-from setuptools.command.egg_info import egg_info
 from pip._internal import main
 
 
@@ -42,7 +38,7 @@ setup(
     keywords="ascii, video, gif, linux, python, terminal",
     entry_points={
         "console_scripts": [
-            'asciivp=ascii_video_palyer.ascii-vp:main'
+            'asciivp=ascii_video_palyer.asciivp:main'
         ]
     }
 )
