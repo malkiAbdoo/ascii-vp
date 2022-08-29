@@ -18,8 +18,8 @@ def main():
     ARGS = PARSER.parse_args()
 
     # check if the file exists
-    if not os.path.exists(ARGS.path):
-        print(f"ERROR: '{path}' does not exist.")
+    if not os.path.exists(ARGS.file):
+        print(f"ERROR: '{ARGS.file}' does not exist.")
         return
 
     play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
