@@ -2,7 +2,7 @@ import os
 import sys
 import cv2, pafy
 from time import sleep
-from ascii_frames import image2ascii
+from . import ascii_frames as af
 
 
 def play(path, size=None, replay=False, chars="", speed=0.06):
@@ -24,7 +24,7 @@ def play(path, size=None, replay=False, chars="", speed=0.06):
         success, frame = vidcap.read()
         if success:
             print("\x1b[H")
-            print(image2ascii(frame, size, chars))
+            print(af.image2ascii(frame, size, chars))
             sleep(speed)
         elif replay: 
             vidcap = cv2.VideoCapture(path)

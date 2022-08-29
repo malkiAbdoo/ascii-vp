@@ -1,7 +1,7 @@
 import os
 import sys
 import argparse
-from play import play
+from . import play
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
             help='characters depending on the grayscale value from black to white (default: "%(default)s")')
     ARGS = PARSER.parse_args()
 
-    play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
+    play.play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
 
 
 if __name__ == '__main__':
