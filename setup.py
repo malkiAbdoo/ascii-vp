@@ -7,15 +7,17 @@ from setuptools.command.egg_info import egg_info
 from pip._internal import main
 
 
-def install_package(package):
+def pip_install(package):
     try: 
         main(['install', package])
     except AttributeError:
         from pip import __main__ as pmain
         pmain._main(['install', package])
 
-
-install_package('opencv-python')
+# install packages
+pip_install('opencv-python')
+pip_install('youtube-dl')
+pip_install('git+https://github.com/Cupcakus/pafy')
 
 setup(
     name="ascii-vp",
@@ -24,10 +26,10 @@ setup(
     author_email="abdo.malkiep@gmail.com",
     description="Convert any video or GIF to ASCII play it in the terminal",
     url="https://github.com/malkiAbdoo/ascii-vp",
-#    project_urls={
-#        'Source': 'https://github.com/joelibaceta/video-to-ascii',
-#        'Tracker': 'https://github.com/joelibaceta/video-to-ascii/issues'
-#    },
+    project_urls={
+        'Source': 'https://github.com/malkiAbdoo/ascii-vp',
+        'Tracker': 'https://github.com/joelibaceta/ascii-vp/issues'
+    },
     packages=['ascii_video_player'],
     install_requires=['opencv-python', 'pafy', 'youtube-dl'],
     classifiers=[
