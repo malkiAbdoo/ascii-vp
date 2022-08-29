@@ -17,7 +17,6 @@ def main():
             help='characters depending on the grayscale value from black to white (default: "%(default)s")')
     ARGS = PARSER.parse_args()
 
-
     play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
 
 
