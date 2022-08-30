@@ -7,7 +7,7 @@ Convert any video or GIF to ASCII and play it in the terminal.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/malkiAbdoo/ascii-vp?color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/malkiAbdoo/ascii-vp?color=orange&logo=git)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ascii-vp?logo=python)
+![PyPI](https://img.shields.io/pypi/v/ascii-vp?label=pypi%20version&logo=pypi)
 ![Twitter URL](https://img.shields.io/twitter/url?label=malkiAbdoo&url=https%3A%2F%2Ftwitter.com%2FmalkiAbdoo)
 
 ![Screenshot](./project_images/example.gif)
