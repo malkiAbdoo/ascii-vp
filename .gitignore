@@ -3,4 +3,5 @@ test/
 *.pyc
 ascii_vp.egg-info/
 build/
+dist/
 
