@@ -60,7 +60,7 @@ $ asciivp video.mp4 -c " .:!lM"
 1. Using OpenCV module to read each frame in the video or GIF
 2. Resize it to the terminal size (if there's not a custom size in the options)
 3. Convert the frame to a grayscale image (black & white)
-4. Mapping each pixel to a given character depending on the grayscale value from black to the white: `" .'~;icok0XN"`
+4. Mapping each pixel to a given character depending on the grayscale value from black to the white. the default value: `" .'~;icok0XN"`
 
 ![grayscale](./project_images/grayscale.svg)
 
