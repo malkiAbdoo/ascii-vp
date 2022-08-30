@@ -1,13 +1,17 @@
 
 # ascii-vp
+
+<div align=center>
+
 Convert any video or GIF to ASCII play it in the terminal.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/malkiAbdoo/ascii-vp?color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/malkiAbdoo/ascii-vp?color=orange&logo=git)
 ![Twitter URL](https://img.shields.io/twitter/url?color=1d9bf0&label=malkiAbdoo&logo=twitter&url=https%3A%2F%2Ftwitter.com%2FmalkiAbdoo)
 
-
 ![Screenshot](./project_images/example.gif)
+
+</div>
 
 ## Requirements
 - python 3 or above
@@ -55,7 +59,7 @@ $ asciivp video.mp4 -c " .:!lM"
 1. Using OpenCV module to read each frame in the video or GIF
 2. Resize it to the terminal size (if there's not a custom size in the options)
 3. Convert the frame to a grayscale image (black & white)
-4. Mapping each pixel to a given character depending on the grayscale value from the darker to the brighter: ` .'~;icok0XN`
+4. Mapping each pixel to a given character depending on the grayscale value from the darker to the brighter: `" .'~;icok0XN"`
 
 ![grayscale](./project_images/grayscale.svg)
 
