@@ -3,18 +3,19 @@
 
 <div align=center>
 
-Convert any video or GIF to ASCII play it in the terminal.
+Convert any video or GIF to ASCII and play it in the terminal.
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/malkiAbdoo/ascii-vp?color=red)
 ![GitHub last commit](https://img.shields.io/github/last-commit/malkiAbdoo/ascii-vp?color=orange&logo=git)
-![Twitter URL](https://img.shields.io/twitter/url?color=1d9bf0&label=malkiAbdoo&logo=twitter&url=https%3A%2F%2Ftwitter.com%2FmalkiAbdoo)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ascii-vp?logo=python)
+![Twitter URL](https://img.shields.io/twitter/url?label=malkiAbdoo&url=https%3A%2F%2Ftwitter.com%2FmalkiAbdoo)
 
 ![Screenshot](./project_images/example.gif)
 
 </div>
 
 ## Requirements
-- python 3 or above
+- python 3.3 or above
 - terminal: CMD, GitBash, Linux or MacOS terminal
 
 ## Installation
