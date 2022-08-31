@@ -72,6 +72,11 @@ $ asciivp video.mp4 -c " .:!lM"
 
 ## See more
 if you are interested in generating ASCII or [ASCII art](https://en.wikipedia.org/wiki/ASCII_art), I have a website that covers all categories about it.
-check out: STASCII - https://stascii.tk/ 
+check out: 
+
+- [STASCII - the ASCII art station](https://stascii.tk/)
+- [ASCII image converting](https://stascii.tk/learn/convert-photos-videos)
+- [Linux ASCII commands](https://stascii.tk/learn/linux-modules) 
+
 
 
