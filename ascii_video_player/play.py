@@ -5,7 +5,7 @@ from time import sleep
 from . import ascii_frames as af
 
 
-def play(path, size=None, replay=False, chars="", speed=0.06):
+def play(path, size=None, replay=False, chars=""):
     # check if it's a URL
     if path.startswith('https://') or path.startswith('http://'):
         if 'youtube.com' in path:
@@ -25,7 +25,7 @@ def play(path, size=None, replay=False, chars="", speed=0.06):
         if success:
             print("\x1b[H")
             print(af.image2ascii(frame, size, chars))
-            sleep(speed)
+            sleep(0.06)
         elif replay: 
             vidcap = cv2.VideoCapture(path)
             continue
