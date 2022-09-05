@@ -17,8 +17,8 @@ pip_install('youtube-dl')
 pip_install('git+https://github.com/Cupcakus/pafy')
 
 setup(
-    name="ascii-vp",
-    version="1.0.0",
+    name="asciivp",
+    version="1.0.1",
     author="Malki Abderrahman",
     author_email="abdo.malkiep@gmail.com",
     description="Convert any video or GIF to ASCII play it in the terminal",
