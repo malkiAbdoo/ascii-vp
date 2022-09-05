@@ -6,6 +6,8 @@ from . import ascii_frames as af
 
 
 def play(path, size=None, replay=False, chars=""):
+    print('Loading..')
+
     # check if it's a URL
     if path.startswith('https://') or path.startswith('http://'):
         if 'youtube.com' in path:
