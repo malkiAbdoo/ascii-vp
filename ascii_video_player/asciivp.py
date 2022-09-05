@@ -17,8 +17,11 @@ def main():
             help='characters depending on the grayscale value from black to white (default: "%(default)s")')
     ARGS = PARSER.parse_args()
 
-    play.play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
-
+    try:
+	play.play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
+    except KeyboardInterrupt:
+	sys.exit()
 
 if __name__ == '__main__':
     main()
+
