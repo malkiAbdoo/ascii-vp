@@ -10,7 +10,7 @@ Convert any video or GIF to ASCII and play it in the terminal.
 [![PyPI](https://img.shields.io/pypi/v/asciivp?label=pypi%20version&logo=pypi)](https://pypi.org/project/asciivp/)
 [![Twitter URL](https://img.shields.io/twitter/url?label=@malkiAbdoo&url=https%3A%2F%2Ftwitter.com%2FmalkiAbdoo)](https://twitter.com/malkiAbdoo)
 
-![Screenshot](https://github.com/malkiAbdoo/ascii-vp/blob/main/project_images/example.gif)
+![Screenshot](./project_images/example.gif)
 
 </div>
 
@@ -62,13 +62,13 @@ $ asciivp video.mp4 -c " .:!lM"
 3. Convert the frame to a grayscale image (black & white)
 4. Mapping each pixel to a given character depending on the grayscale value from black to the white. the default value: `" .'~;icok0XN"`
 
-![grayscale](https://github.com/malkiAbdoo/ascii-vp/blob/main/project_images/grayscale.svg)
+![grayscale](./project_images/grayscale.svg)
 
 5. finaly print the frame.
 
 ### Overview
 
-![Explaining](https://github.com/malkiAbdoo/ascii-vp/blob/main/project_images/explain.jpg)
+![Explaining](./project_images/explain.jpg)
 
 ## See more
 if you are interested in generating ASCII or [ASCII art](https://en.wikipedia.org/wiki/ASCII_art), I have a website that covers all categories about it.
