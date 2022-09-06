@@ -1,4 +1,5 @@
 import pip
+from pathlib import Path
 from setuptools import setup
 from setuptools import find_packages
 from pip._internal import main
@@ -16,12 +17,17 @@ pip_install('opencv-python')
 pip_install('youtube-dl')
 pip_install('git+https://github.com/Cupcakus/pafy')
 
+# read text from README file 
+current_folder = Path(__file__).parent
+README = (current_folder / "README.md").read_text()
+
 setup(
     name="asciivp",
     version="1.0.1",
     author="Malki Abderrahman",
     author_email="abdo.malkiep@gmail.com",
     description="Convert any video or GIF to ASCII play it in the terminal",
+    long_description=README,
     url="https://github.com/malkiAbdoo/ascii-vp",
     project_urls={
         'Source': 'https://github.com/malkiAbdoo/ascii-vp',
