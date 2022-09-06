@@ -23,11 +23,12 @@ README = (current_folder / "README.md").read_text()
 
 setup(
     name="asciivp",
-    version="1.0.2",
+    version="1.0.1",
     author="Malki Abderrahman",
     author_email="abdo.malkiep@gmail.com",
     description="Convert any video or GIF to ASCII play it in the terminal",
     long_description=README,
+    long_description_content_type='text/markdown',
     url="https://github.com/malkiAbdoo/ascii-vp",
     project_urls={
         'Source': 'https://github.com/malkiAbdoo/ascii-vp',
