@@ -1,6 +1,6 @@
 
 - Python 3.3 or above
-- OpenCV 4.5.5.64
+- OpenCV
 - pafy
 - youtube-dl
 
