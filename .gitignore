@@ -1,7 +1,7 @@
 
 test/
 *.pyc
-ascii_vp.egg-info/
+asciivp.egg-info/
 build/
 dist/
 
