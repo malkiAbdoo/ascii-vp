@@ -35,9 +35,9 @@ just type `asciivp` followed by the file
 $ asciivp video.mp4
 ```
 
-you can use URL as well
+you can use URL as well between double quotes
 ```bash
-$ asciivp https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley
+$ asciivp "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
 ```
 
 ### Options
