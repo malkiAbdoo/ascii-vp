@@ -1,4 +1,5 @@
 import pip
+from re import sub
 from pathlib import Path
 from setuptools import setup
 from setuptools import find_packages
@@ -19,11 +20,11 @@ pip_install('git+https://github.com/Cupcakus/pafy')
 
 # read text from README file 
 current_folder = Path(__file__).parent
-README = (current_folder / "README.md").read_text()
+README = sub('!\[Screenshot\]\(.*\)', '', (current_folder / "README.md").read_text())
 
 setup(
     name="asciivp",
-    version="1.0.7",
+    version="1.0.8",
     author="Malki Abderrahman",
     author_email="abdo.malkiep@gmail.com",
     description="Convert any video or GIF to ASCII play it in the terminal",
