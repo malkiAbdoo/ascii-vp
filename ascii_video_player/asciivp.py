@@ -20,7 +20,7 @@ def main():
     try:
 	    play.play(path=ARGS.file, size=ARGS.size, replay=ARGS.replay, chars=ARGS.chars)
     except KeyboardInterrupt:
-	    sys.exit()
+	    return
 
 if __name__ == '__main__':
     main()
