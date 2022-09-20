@@ -27,7 +27,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'opencv-python',
-        'pafy @ git+https://github.com/Cupcakus/pafy',
+        'pafy-tmsl',
         'youtube-dl'
     ],
     classifiers=[
