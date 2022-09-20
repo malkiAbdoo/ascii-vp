@@ -26,9 +26,9 @@ def rescale_frame(frame, size):
             sys.exit()
     else:
         # get the terminal height
-        lines, _ = os.get_terminal_size()
+        lines = os.get_terminal_size()[1]
 
-        height = int((lines) / 4.2)
+        height = lines - 2
         width = int(frame.shape[1] * height * 2 / frame.shape[0])
     dim = (width, height)
 
