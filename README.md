@@ -16,7 +16,7 @@ Convert any video or GIF to ASCII and play it in the terminal.
 
 ## Requirements
 - python 3.3 or above
-- terminal: CMD, GitBash, Linux or MacOS terminal
+- Linux or MacOS
 
 ## Installation
 install it with `pip` command
@@ -41,6 +41,9 @@ $ asciivp "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
 ```
 
 ### Options
+**`--color`**
+Allow to use colors in the ascii video
+
 **`-r --replay`**
 Allow to auto-replay when the video ends
 
