@@ -12,12 +12,12 @@ README = sub('!\[Screenshot\]\(.*\)', '', (current_folder / "README.md").read_te
 
 setup(
     name="asciivp",
-    version="1.0.9",
+    version="1.1.1",
     author="Malki Abderrahman",
     author_email="abdo.malkiep@gmail.com",
-    description="Convert any video or GIF to ASCII play it in the terminal",
+    description="Convert any video or GIF to ASCII and play it in the terminal",
     long_description=README,
-    long_description_content_type='text/markdown',
+    long_description_content_type="text/markdown",
     url="https://github.com/malkiAbdoo/ascii-vp",
     project_urls={
         'Source': 'https://github.com/malkiAbdoo/ascii-vp',
@@ -25,11 +25,7 @@ setup(
     },
     packages=find_packages(),
     include_package_data=True,
-    install_requires=[
-        'opencv-python',
-        'pafy-tmsl',
-        'youtube-dl'
-    ],
+    install_requires=['opencv-python', 'pafy-tmsl', 'youtube-dl'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.10",
